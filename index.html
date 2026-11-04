@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TheUknowskeleton_ // 777</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<header>
+    <div class="logo">☠ TheUknowskeleton_</div>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#terminal">TERMINAL</a>
+        <a href="#systems">SYSTEMS</a>
+        <a href="#projects">PROJECTS</a>
+    </nav>
+    <div class="online"><span></span> ONLINE // 777</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div>
+        <div class="tag">[ SYSTEM ONLINE // 777 ]</div>
+        <h1>SPOOKY<br>SCARY<br><span>SKELETONS.</span></h1>
+        <p class="description">
+            Welcome to the underground.
+            Where code gets creepy, computers get weird,
+            and skeletons never sleep.
+        </p>
+        <div class="actions">
+            <a class="action primary" href="#terminal">ENTER THE CRYPT ↘</a>
+            <button class="action" id="summonButton">SUMMON SKELETON</button>
+        </div>
+        <div class="hero-meta">
+            <span>BUILD 777</span>
+            <span>NO SLEEP. NO SKIN.</span>
+            <span id="heroClock">--:--:--</span>
+        </div>
+    </div>
+    <div class="skull-area">
+        <div class="orbit"></div>
+        <div class="skull">💀</div>
+        <small>FIG. 001 — THE RESIDENT</small>
+    </div>
+</section>
+
+<section class="section" id="systems">
+    <div class="section-heading">
+        <div class="tag">01 / LIVE READOUT</div>
+        <h2>CRYPT SYSTEMS</h2>
+    </div>
+    <div class="stats">
+        <div class="stat">
+            <small>CRYPT STATUS</small>
+            <strong class="green">ONLINE</strong>
+            <p>Nothing escaped. Yet.</p>
+        </div>
+        <div class="stat">
+            <small>SKULL COUNT</small>
+            <strong id="skullCount">777</strong>
+            <p>Residents in the database</p>
+        </div>
+        <div class="stat">
+            <small>THREAT LEVEL</small>
+            <strong class="orange" id="threatLevel">LOW</strong>
+            <p>Probably harmless</p>
+        </div>
+        <div class="stat">
+            <small>LOCAL TIME</small>
+            <strong id="systemClock">--:--:--</strong>
+            <p>Your machine's clock</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="terminal">
+    <div class="section-heading">
+        <div class="tag">02 / COMMAND INTERFACE</div>
+        <h2>ACCESS THE CRYPT</h2>
+    </div>
+
+    <div class="terminal-layout">
+        <div class="terminal">
+            <div class="terminal-top">
+                <div class="dots"><i></i><i></i><i></i></div>
+                <span>root@theuknowskeleton: ~</span>
+                <span class="terminal-status">● LOCAL SESSION</span>
+            </div>
+
+            <div class="terminal-body">
+                <div id="output">THEUKNOWSKELETON TERMINAL v7.7.7
+------------------------------------
+SYSTEM: ONLINE
+SESSION: GUEST ROOT
+
+Type help to see available commands.
+
+</div>
+                <form id="terminalForm" class="input-line">
+                    <label class="prompt" for="command">root@crypt:~$</label>
+                    <input id="command" autocomplete="off"
+                           spellcheck="false" placeholder="enter a command...">
+                    <button type="submit">RUN ↵</button>
+                </form>
+            </div>
+        </div>
+
+        <aside class="command-panel">
+            <h3>QUICK COMMANDS</h3>
+            <p class="panel-subtitle">CLICK TO EXECUTE</p>
+
+            <div class="quick-commands">
+                <button data-command="help">help <span>show commands</span></button>
+                <button data-command="skele">skele <span>print a skeleton</span></button>
+                <button data-command="dance">dance <span>bone choreography</span></button>
+                <button data-command="matrix">matrix <span>enter the void</span></button>
+                <button data-command="scan">scan <span>scan the crypt</span></button>
+                <button data-command="whoami">whoami <span>identify yourself</span></button>
+                <button data-command="secret">secret <span>hidden message</span></button>
+                <button data-command="jumpscare">jumpscare <span>bad idea</span></button>
+                <button data-command="clear">clear <span>wipe terminal</span></button>
+            </div>
+
+            <div class="tip">
+                <b>TIP //</b> Try <code>skele</code>, <code>fortune</code>,
+                or <code>secret</code>.
+            </div>
+        </aside>
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <div class="section-heading">
+        <div class="tag">03 / FROM THE GRAVEYARD</div>
+        <h2>PROJECT ARCHIVE</h2>
+    </div>
+
+    <div class="projects">
+        <article class="project">
+            <div class="project-icon">⌘</div>
+            <small>FILE_001</small>
+            <h3>PYTHON EXPERIMENTS</h3>
+            <p>Odd little programs, visual experiments, and things that probably shouldn't be automated.</p>
+            <span>PYTHON // ACTIVE</span>
+        </article>
+
+        <article class="project">
+            <div class="project-icon">⌁</div>
+            <small>FILE_002</small>
+            <h3>ASSEMBLY LAB</h3>
+            <p>Registers, memory, and tiny machines built one instruction at a time.</p>
+            <span>NASM // 64-BIT</span>
+        </article>
+
+        <article class="project">
+            <div class="project-icon">☠</div>
+            <small>FILE_003</small>
+            <h3>THE CRYPT</h3>
+            <p>A haunted web interface with reactive particles and a command terminal.</p>
+            <span>HTML // CSS // JS</span>
+        </article>
+    </div>
+</section>
+
+<section class="fortune-section">
+    <div class="tag">04 / MESSAGE FROM BELOW</div>
+    <h2>THE BONES ARE QUIET.<br>THE TERMINAL IS NOT.</h2>
+    <button id="fortuneButton">REVEAL A DARK FORTUNE ↗</button>
+</section>
+
+</main>
+
+<footer>
+    <span>☠ TheUknowskeleton_</span>
+    <span>BUILD 777 // NO SLEEP FOR THE SKELETONS</span>
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
